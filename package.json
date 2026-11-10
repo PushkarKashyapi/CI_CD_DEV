@@ -8,11 +8,12 @@
   "main": "app.js",
   "scripts": {
     "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --config=jest.config.js --runInBand",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "node --check src/server.js && node --check src/app.js"
   },
   "dependencies": {
     "express": "^5.3.0",
-    "vibeshield-nodejs-backend": "^0.1.12"
+    "vibeshield-nodejs-backend": "^0.1.13"
   },
   "devDependencies": {
     "jest": "^30.5.2",
